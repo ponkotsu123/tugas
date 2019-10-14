@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>TAMBAH BARANG</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+   <ion-input name="name" type="int"  placeholder="Nominal" ngModel required></ion-input>
+</ion-item>
+<ion-item>
+  <ion-input name="name" type="int"  placeholder="Harga" ngModel required></ion-input>
+</ion-item>
+  <ion-item>
+         <ion-label>Platform Voucher</ion-label>
+         <ion-select multiple="true">
+          <ion-select-option value="STEAM">STEAM</ion-select-option>
+          <ion-select-option value="MEGAXUS">MEGAXUS</ion-select-option>
+          <ion-select-option value="GEMSCOOL">GEMSCOOL</ion-select-option>
+          <ion-select-option value="GOOGLE">GOOGLE PLAY</ion-select-option>
+          <ion-select-option value="IOS">IOS</ion-select-option>
+        </ion-select>
+   </ion-item>
+   <ion-item>
+     <ion-label>Mata Uang</ion-label>
+     <ion-select multiple="true">
+       <ion-select-option value="USD">USD</ion-select-option>
+       <ion-select-option value="IDR">IDR</ion-select-option>
+       <ion-select-option value="EUR">EUR</ion-select-option>
+       <ion-select-option value="YEN">YEN</ion-select-option>
+       <ion-select-option value="HKD">HKD</ion-select-option>
+     </ion-select>
+</ion-item>
+ <ion-item>
+         <ion-label>Tanggal Rilis</ion-label>
+         <ion-datetime value="2000-01-01" displayFormat="DD MMM YYYY" placeholder="Select Date"></ion-datetime>
+       </ion-item>
+ <ion-item>
+     <ion-label position="floating">Catatan</ion-label>
+     <ion-textarea></ion-textarea>
+ </ion-item>
+ <ion-button expand="block">Tambah</ion-button>
+</ion-content>
